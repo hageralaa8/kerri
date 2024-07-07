@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+:root {
+    --main-color: #e65f78;
+    --main-transion: all 0.5s;
+}
+
+.max-width-500 {
+    max-width: 500px;
+}
+
+/* nav bar */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: black !important;
+    transition: var(--main-transion) !important;
+    }
+/* scrol spy */
+.navbar-nav .nav-link.active {
+    color: var(--main-color) !important;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+/* home style */
+div.home {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+div.home .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home h2:after {
+    content: '';
+    animation: words 8s infinite alternate;
+}
+
+@keyframes words {
+    0% {
+        content: "|";
+    }
+
+    3% {
+        content: "D|";
+    }
+
+    5% {
+        content: "De|";
+    }
+
+    7% {
+        content: "Dev|";
+    }
+
+    10% {
+        content: "Deve|";
+    }
+
+    13% {
+        content: "Devel|";
+    }
+
+    15% {
+        content: "Develo|";
+    }
+
+    17% {
+        content: "Develop|";
+    }
+
+    20% {
+        content: "Developm|";
+    }
+
+    24% {
+        content: "Developme|";
+    }
+
+    25% {
+        content: "Developmen|";
+    }
+
+    27% {
+        content: "Development|";
+    }
+
+    30% {
+        content: "Development|";
+    }
+
+    32% {
+        content: "Developmen|";
+    }
+
+    35% {
+        content: "Developme|";
+    }
+
+    37% {
+        content: "Develop|";
+    }
+
+    40% {
+        content: "Develo|";
+    }
+
+    42% {
+        content: "Devel|";
+    }
+
+    45% {
+        content: "Deve|";
+    }
+
+    47% {
+        content: "Dev|";
+    }
+
+    50% {
+        content: "De|";
+    }
+
+    52% {
+        content: "Des|";
+    }
+
+    55% {
+        content: "Desi|";
+    }
+
+    57% {
+        content: "Desig|";
+    }
+
+    60% {
+        content: "Design|";
+    }
+
+    62% {
+        content: "Designe|";
+    }
+
+    65% {
+        content: "Designer|";
+    }
+
+    67% {
+        content: "Designer|";
+    }
+
+    70% {
+        content: "Designe|";
+    }
+
+    72% {
+        content: "Design|";
+    }
+
+    75% {
+        content: "Desig|";
+    }
+
+    77% {
+        content: "Desi|";
+    }
+
+    80% {
+        content: "Des|";
+    }
+
+    82% {
+        content: "De|";
+    }
+
+    85% {
+        content: "Dev|";
+    }
+
+    87% {
+        content: "Deve|";
+    }
+
+    90% {
+        content: "Devel|";
+    }
+
+    92% {
+        content: "Develo|";
+    }
+
+    95% {
+        content: "Develop|";
+    }
+
+    97% {
+        content: "Develope|";
+    }
+
+    100% {
+        content: "Developer|";
+    }
+}
+
+.setting {
+    top: 30%;
+    background-color: rgb(51, 51, 51);
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+.dot {
+    border: 2px solid #fff;
+    padding: 35px 15px;
+    bottom: 60px;
+    left: 50%;
+    animation: dot 2s infinite alternate;
+}
+
+.dot::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
+}
+
+@keyframes dot {
+    0% {
+        bottom: 60px;
+    }
+
+    25% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+
+    75% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 60px;
+    }
+}
+
+/* start about  */
+.about h3 span {
+    color: var(--main-color);
+}
+
+.icons i {
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icons i:hover {
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+/* .about .icons div====> lw ast5dmd el -F w 3aiz a3ml border
+1-div:icon 2- ul 3-li 4- a===>yad5lne 3la face,... 5 div gowh i
+{
+    width: 40px;
+    height: 40px ;
+    border-radius: 50%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 4px ;
+}
+.about .icons div:hover{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+} */
+/* end about */
+/* starrt client */
+.client {
+    background-color: #f1f1f1;
+}
+
+.client i {
+    color: var(--main-color);
+}
+
+.carousel-indicators button {
+    background-color: var(--main-color) !important;
+    height: 6px !important;
+    border-radius: 40%;
+}
+
+/* end cleint */
+/* work section */
+.work ul {
+
+    color: black !important;
+}
+
+.work ul .active {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+
+.work .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    /*  top-0 left-0 right-0 bottom-0 stretsh mn kol el nawa7y */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    /*  matkonsh zahra w awel m hover tazher */
+    transition: all 0.5s;
+    /*  ta7sel fe nos sania */
+}
+
+.work .item:hover .layer {
+    opacity: 1;
+}
+
+.work .item:hover .scale-img {
+    scale: 1.3;
+    transition: all 0.5s;
+    /* ya scale bardo fe nos sania */
+}
+
+/* start blog */
+
+.blog p span {
+    color: var(--main-color);
+}
+
+/* end blog */
+/* start contact */
+.contact i {
+    color: var(--main-color);
+}
+
+.contact button {
+    background-color: var(--main-color) !important;
+}
